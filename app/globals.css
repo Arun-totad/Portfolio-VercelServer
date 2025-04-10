@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+/* .bg-custom {
+  background-image: url('/gg1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+
+/* Red to Yellow gradient for the Red color option */
+.red-theme {
+  background: linear-gradient(to right,rgba(247, 116, 8, 0.884),  rgb(153, 11, 248));
+}
+
+/* Green to Lime gradient for the Green color option */
+.green-theme {
+  background: linear-gradient(to right,  #0f9e4b, #14dbe2);
+}
+
+/* Blue gradient for the Blue color option */
+.blue-theme {
+  background: linear-gradient(to right,  #6a0dad, #00bcd4); /* Purple to Cyan gradient */
+}
+
+
+:root {
+--title-1-color: #6a0dad; /* Define Purple color */
+--title-2-color: #00bcd4; /* Define Cyan color */
+--nav-1-color:  #e9d5ff; 
+--nav-2-color:  #b5f3fc;
+--border-color: rgba(112, 66, 248, 0.54);
+--border-project-color: #2A0E61;
+--arrow-color: #b49bff;
+--hamburger-1-color:  #6b46c1;
+--hamburger-2-color:  #4c51bf;
+--hamburger-3-color: #00bcd4;
+--footer-color: rgba(62, 9, 112, 0.53);
+}
+
+[data-theme='blue']{
+  --title-1-color: #6a0dad; /* Define Purple color */
+  --title-2-color: #00bcd4; /* Define Cyan color */
+  --nav-1-color:  #e9d5ff; 
+  --nav-2-color:  #b5f3fc;
+  --border-color: rgba(112, 66, 248, 0.54);
+  --border-project-color: #2A0E61;
+  --arrow-color: #b49bff;
+  --hamburger-1-color:  #6b46c1;
+  --hamburger-2-color:  #4c51bf;
+  --hamburger-3-color: #00bcd4;
+  --footer-color: rgba(62, 9, 112, 0.53);
+}
+
+[data-theme='green'] {
+  --title-1-color: #0f9e4b; /* Define Purple color */
+  --title-2-color: #14dbe2; /* Define Cyan color */
+  --nav-1-color:  #31c06d; 
+  --nav-2-color:  #1dc8e2;
+  --border-color: rgba(23, 206, 93, 0.54);
+  --border-project-color: #0e6145;
+  --arrow-color: #18b8aa;
+  --hamburger-1-color:  #1ac5a0;
+  --hamburger-2-color:  #484dac;
+  --hamburger-3-color: #00bcd4;
+  --footer-color: rgba(9, 112, 18, 0.53);
+}
+
+[data-theme='red'] {
+  --title-1-color: rgba(247, 116, 8, 0.884); /* Define Purple color */
+  --title-2-color: rgb(153, 11, 248); /* Define Cyan color */
+  --nav-1-color:  rgba(214, 131, 63, 0.884); 
+  --nav-2-color:  rgb(152, 0, 253);
+  --border-color: rgba(224, 156, 29, 0.54);
+  --border-project-color: #61520e;
+  --arrow-color: #e08b0b;
+  --hamburger-1-color:  rgba(247, 116, 8, 0.884);
+  --hamburger-2-color:   rgba(210, 182, 229, 0.568);
+  --hamburger-3-color:  rgb(153, 11, 248);
+  --footer-color: rgba(112, 96, 9, 0.53);
+}
+
+
+.montserrat-reg{
+  font-family: "Montserrat", serif;
+  font-style: normal;
+}
+
+.montserrat-hero {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.cursive {
+  font-family: "Cedarville Cursive", cursive;
+}
+
+.hamburger-gradient {
+  background: linear-gradient(to right, var(--hamburger-1-color),var(--hamburger-2-color),var(--hamburger-3-color) ); /* Purple, Indigo, and Cyan gradient */
+  padding: 0.5rem; /* Equivalent to p-2 (0.5rem) */
+  border-radius: 9999px; /* Equivalent to rounded-full (fully rounded corners) */
+}
+
+/* #a48fff1f; */
+.Welcome-box {
+  isolation: isolate;
+  overflow: hidden;
+  align-items: center;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  border-radius: 32px;
+  box-shadow: inset 0 -7px 11px #a48fff1f;
+  display: flex;
+
+  position: relative;
+  width: -moz-max-content;
+  width: max-content;
+  transition: 0.45s cubic-bezier(0.6, 0.6, 0, 1) box-shadow;
+
+  padding-top: 9px;          /* py-[9px] */
+  padding-bottom: 9px;       /* py-[9px] */
+  padding-left: 7px;         /* px-[7px] */
+  padding-right: 7px;        /* px-[7px] */
+  
+  border: 1px solid var(--border-color);  /* border-[#7042f88b] */
+  opacity: 1;  /* opacity-[1] */
+}
+
+/* bg-gradient-to-r from-purple-500 to-cyan-500 */
+/* #6a0dad, #00bcd4 */
+.bg-gradient-right {
+  background: linear-gradient(to right, var(--title-1-color), var(--title-2-color)); /* Purple to Cyan gradient */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: background 1s ease;
+}
+
+.bg-gradient-right:hover {
+  background: linear-gradient(to left, var(--title-1-color), var(--title-2-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* Cyan to Purple gradient on hover */
+}
+
+.bg-gradient-right-light {
+  background: linear-gradient(to right, var(--nav-1-color), var(--nav-2-color) ); /* Purple to Cyan gradient */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: background 1s ease;
+}
+
+.bg-gradient-right-light:hover {
+  background: linear-gradient(to left, var(--nav-1-color), var(--nav-2-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; /* Cyan to Purple gradient on hover */
+}
+
+.bg-gradient-right-nav{
+  background: linear-gradient(to right, var(--title-1-color), var(--title-2-color));
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hidden {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* .home__img {
+
+  border-radius: 50%;
+  border: 2rem solid var(--container-color);
+
+} */
+
+/* .home__img {
+  /* width: 400px;
+  height: 400px; */
+  /* border: px solid transparent; */
+  /* border-radius: 50%;  */
+  /* Keep the circle shape */
+/* } */
+
+
+
+.project-container {
+  position: relative;  /* Equivalent to 'relative' */
+  overflow: hidden;    /* Equivalent to 'overflow-hidden' */
+  border-radius: 0.5rem;  /* Equivalent to 'rounded-lg' (rounded corners) */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Equivalent to 'shadow-lg' (larger shadow) */
+  border: 1px solid var(--border-project-color); /* Equivalent to 'border-[#2A0E61]' */
+}
+
+.arrow-icon-color {
+  color: var(--arrow-color); /* Your desired color */
+}
+
+#contact {
+  background: linear-gradient(to bottom, transparent, var(--footer-color));
+}
+
+.header-fixed {
+  font-family: 'Montserrat', sans-serif;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 65px;
+  box-shadow: 0 5px 15px -3px var(--footer-color);
+  background-color: rgba(3, 0, 20, 0.63);
+  backdrop-filter: blur(10px);
+  z-index: 50;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+
+
+/* globals.css or a separate CSS file for buttons */
+/* globals.css or any relevant CSS file */
+/* Container to position the theme switcher button */
+/* Container to position the theme switcher button below the navbar */
+.theme-switcher-container {
+  position: fixed;
+  top: 80px; /* Adjust this to be below the navbar */
+  right: 20px; /* Default position on the right side */
+  z-index: 1000; /* Ensure it's above other content */
+  display: flex;
+  flex-direction: column; /* Stack dropdown vertically */
+}
+
+/* The button itself (small and round, background color transparent) */
+.theme-switcher-button {
+  background-color: transparent; /* Transparent background */
+  color: rgba(255, 0, 0, 0); /* Default color for the icon initially (Red) */
+  border: none;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px; /* Adjust size of the button */
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+/* Change the background color on hover */
+.theme-switcher-button:hover {
+  background-color: rgba(255, 0, 0, 0); /* Red background on hover */
+  color: white; /* Change icon color to white on hover */
+}
+
+/* Dropdown menu styling */
+.theme-dropdown {
+  position: absolute;
+  top: 40px; /* Positioned below the button */
+  left: 0;  /* Default position on the left side of the button */
+  background-color: transparent;
+  border: none;
+  display: flex;
+  flex-direction: column; /* Stack the color options vertically */
+  gap: 10px; /* Space out the color circles */
+  padding: 2px;
+  opacity: 0; /* Initially hidden */
+  visibility: hidden; /* Hidden initially */
+  transform: translateY(-20px); /* Start slightly above */
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s;
+}
+
+/* When the dropdown is visible (for animation effect) */
+.theme-dropdown.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0); /* Slide down the dropdown */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Styling for the color options (rounded circles) */
+.color-option {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); /* Add a slight shadow */
+}
+
+/* Hover effect for the color circles */
+.color-option:hover {
+  transform: scale(1.1); /* Slightly enlarge the circle on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25); /* Increase the shadow on hover */
+}
+
+/* Media Query for Mobile View */
+@media (max-width: 768px) {
+  .theme-switcher-container {
+    left: 20px; /* Position on the left side on mobile */
+    right: unset; /* Unset the right property for mobile view */
+  }
+
+  /* Dropdown menu for mobile view */
+  .theme-dropdown {
+    left: unset; /* Unset left positioning */
+    right: 0; /* Position on the right side of the button */
+  }
+
+  /* Update the button size for mobile */
+  .theme-switcher-button {
+    font-size: 20px;
+    padding: 5px; /* Adjust padding for smaller screens */
+  }
+}
+
+/* styles.css */
+.tab-button {
+  padding: 0.2rem 0.5rem;
+  /* border: 2px solid transparent; */
+  border-radius: 9999px; /* for rounded full button */
+  transition: all 0.3s ease-in-out;
+}
+
+.tab-button-active {
+  background: linear-gradient(to right, var(--title-1-color), var(--title-2-color)); /* blue-500 to purple-600 */
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.tab-button-inactive {
+  color: #9ca3af; /* gray-400 */
+}
+
+.tab-button-inactive:hover {
+  background-color: #374151; /* gray-700 */
+  color: white;
+}
+
+
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-border-animation {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  /* background: linear-gradient(90deg, #ff7eb3, #ff758c, #8a9eff, #42cdd3); */
+  background: linear-gradient(90deg, var(--title-1-color), var(--nav-1-color), var(--title-2-color), var(--nav-2-color));
+  background-size: 200% 200%;
+  animation: gradient-animation 6s infinite linear;
+}
