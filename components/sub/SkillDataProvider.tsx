@@ -43,7 +43,7 @@ const SkillDataProvider = ({ src, width, height, index, skillName }: Props) => {
       <motion.div
         style={{ position: 'relative' }}
         animate={{
-          scale: hovered ? 1.1 : 1,  // Slightly enlarge image when hovered
+          scale: hovered ? 1.3 : 1,  // Slightly enlarge image when hovered
         }}
         transition={{
           duration: 0.3,  // Duration of scale animation
@@ -68,7 +68,7 @@ const SkillDataProvider = ({ src, width, height, index, skillName }: Props) => {
             left: '50%',
             transform: 'translateX(-50%)',
             color: 'white',
-            fontSize: '10px', // Very small font size
+            fontSize: '15px', // Very small font size
             fontWeight: 'normal', // Normal font weight
             zIndex: 10,
             pointerEvents: 'none', // Prevent interference with image hover

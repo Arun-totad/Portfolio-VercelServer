@@ -23,18 +23,17 @@ const HeroContent = () => {
             Hi, I am <br />
             <span className="cursor-pointer bg-gradient-right">
               {" "}
-              Rohan Venkatesha{" "}
+              Arun Totad,{" "}
             </span>
             <br />
-            Senior Software Engineer.
+            Software Developer.
           </span>
         </motion.div>
         <motion.p
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-300 my-5 max-w-[500px]"
         >
-With 4+ years of experience in backend & API development, infrastructure systems engineering, and cloud & on-prem deployments, 
-I am a skilled full-stack engineer passionate about creating scalable software solutions with modern technologies.
+With 3 years of professional experience in software development and currently pursuing my masters in computer science at Western Michigan University, I am a skilled full-stack engineer passionate about creating scalable software solutions with modern technologies.
         </motion.p>
         <motion.p
           variants={slideInFromLeft(0.9)}
@@ -49,7 +48,7 @@ I am a skilled full-stack engineer passionate about creating scalable software s
             className="Welcome-box flex items-center"
             target="_blank"
             rel="noopener noreferrer"
-            href="https://drive.google.com/file/d/1zf7aHGIk7Qymr7dP7ilbvY25KHc0bVIb/view?usp=drive_link"
+            href="https://drive.google.com/file/d/10hyZzUJe_yLn15Dm7Y6YWjyB0d_AHjZJ/view"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -60,7 +59,7 @@ I am a skilled full-stack engineer passionate about creating scalable software s
           </motion.a>
           <motion.a
             // variants={slideInFromLeft(1)}
-            href="https://github.com/rohanvenkatesha"
+            href="https://github.com/arun-totad"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-white transition duration-300"
@@ -70,7 +69,7 @@ I am a skilled full-stack engineer passionate about creating scalable software s
           </motion.a>
           <motion.a
             // variants={slideInFromLeft(1)}
-            href="https://www.linkedin.com/in/rohan-venkatesha"
+            href="https://www.linkedin.com/in/arun-totad"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-500 hover:text-blue-500 transition duration-300"
@@ -90,8 +89,8 @@ I am a skilled full-stack engineer passionate about creating scalable software s
           <Image
             src="/home.jpg"
             alt="profile picture"
-            height={400}
-            width={400}
+            height={350}
+            width={350}
             className="relative rounded-full bg-white"
           />
         </div>

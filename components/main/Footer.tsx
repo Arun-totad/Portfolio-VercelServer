@@ -18,7 +18,7 @@ const Footer = () => {
             <p className="flex flex-row items-center my-[15px] cursor-pointer gap-5">
               {/* GitHub Link */}
               <a
-                href="https://github.com/rohanvenkatesha"
+                href="https://github.com/arun-totad"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center"
@@ -29,7 +29,7 @@ const Footer = () => {
 
               {/* LinkedIn Link */}
               <a
-                href="https://www.linkedin.com/in/rohan-venkatesha"
+                href="https://www.linkedin.com/in/arun-totad"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center"
@@ -40,7 +40,7 @@ const Footer = () => {
 
               {/* Mail Link */}
               <a
-                href="mailto:rohanvenkatesha@gmail.com"
+                href="mailto:aruntotad05@gmail.com"
                 className="flex items-center"
               >
                 <MdMail />
@@ -50,8 +50,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="cursive mb-[20px] text-[15px] text-center">
-          &copy; Designed and Developed by Rohan Venkatesha
+        <div className=" mb-[20px] text-[15px] text-center">
+          &copy; Designed and Developed by Arun Totad
         </div>
 
         {/* Icons below "Designed and Developed by Rohan Venkatesha" */}

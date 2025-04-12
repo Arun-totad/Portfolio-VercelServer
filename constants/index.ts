@@ -57,22 +57,11 @@ export const Web_Skills = [
     },
   ];
   
-  export const Backend_skill = [
+  
+  export const Db_Skills = [
     {
-      skill_name: "Django",
-      Image: "/icons/django1.png",
-      width: 60,
-      height: 60,
-    },
-    {
-      skill_name: "Flask",
-      Image: "/icons/flask.png",
-      width: 60,
-      height: 60,
-    },
-    {
-      skill_name: "Rest API",
-      Image: "/icons/restapi.png",
+      skill_name: "Oracle SQL",
+      Image: "/icons/oraclesql.png",
       width: 60,
       height: 60,
     },
@@ -83,55 +72,10 @@ export const Web_Skills = [
       height: 60,
     },
     {
-      skill_name: "Node Js",
-      Image: "/icons/node-js.png",
-      width: 60,
-      height: 60,
-    },
-    {
-      skill_name: "Backend",
-      Image: "/icons/backend.png",
-      width: 60,
-      height: 60,
-    },
-    {
-      skill_name: "Microservices",
-      Image: "/icons/microservices.png",
-      width: 60,
-      height: 60,
-    },
-  ];
-  
-  export const Db_Skills = [
-    {
-      skill_name: "Oracle SQL",
-      Image: "/icons/oraclesql.png",
-      width: 60,
-      height: 60,
-    },
-    {
-      skill_name: "Microsoft SQL Server",
-      Image: "/icons/sqlserver.png",
-      width: 60,
-      height: 60,
-    },
-    {
-      skill_name: "Postgre SQL",
-      Image: "/icons/postgre.png",
-      width: 60,
-      height: 60,
-    },
-    {
       skill_name: "My SQL",
       Image: "/icons/mysql.png",
       width: 60,
       height: 60,
-    },
-    {
-      skill_name: "Mongo DB",
-      Image: "/icons/mongodb.png",
-      width: 40,
-      height: 40,
     },
     {
       skill_name: "Firebase",
@@ -142,27 +86,27 @@ export const Web_Skills = [
   
   ];
 
-  export const Analytical_Skills = [
-    {
-      skill_name: "Power BI",
-      Image: "/icons/powerbi.png",
-      width: 60,
-      height: 60,
-    },
-    {
-      skill_name: "Numpy",
-      Image: "/icons/numpy.png",
-      width: 60,
-      height: 60,
-    },
-    {
-      skill_name: "Pandas",
-      Image: "/icons/pandas.png",
-      width: 60,
-      height: 60,
-    },
+  // export const Analytical_Skills = [
+  //   {
+  //     skill_name: "Power BI",
+  //     Image: "/icons/powerbi.png",
+  //     width: 60,
+  //     height: 60,
+  //   },
+  //   {
+  //     skill_name: "Numpy",
+  //     Image: "/icons/numpy.png",
+  //     width: 60,
+  //     height: 60,
+  //   },
+  //   {
+  //     skill_name: "Pandas",
+  //     Image: "/icons/pandas.png",
+  //     width: 60,
+  //     height: 60,
+  //   },
   
-  ];
+  // ];
   
   
   export const Cloud_Skills = [
@@ -178,24 +122,7 @@ export const Web_Skills = [
       width: 60,
       height: 60,
     },
-    {
-      skill_name: "Microsoft Azure",
-      Image: "/icons/azure.png",
-      width: 60,
-      height: 60,
-    },
-    {
-      skill_name: "AWS S3",
-      Image: "/icons/awss3.png",
-      width: 60,
-      height: 60,
-    },
-    {
-      skill_name: "AWS Lambda",
-      Image: "/icons/awslambda.png",
-      width: 60,
-      height: 60,
-    },
+    
   ];
 
   export const Programming_Skills = [
@@ -270,7 +197,7 @@ export const Web_Skills = [
       height: 60,
     },
     {
-      skill_name: "Git",
+      skill_name: "GitHub",
       Image: "/icons/git.png",
       width: 60,
       height: 60,
@@ -349,17 +276,17 @@ export const Web_Skills = [
     {
       name: "Github",
       src: "/github.png",
-      url: "https://github.com/rohanvenkatesha"
+      url: "https://github.com/arun-totad"
     },
     {
       name: "Linkedin",
       src: "/linked.png",
-      url: "https://www.linkedin.com/in/rohan-venkatesha"
+      url: "https://www.linkedin.com/in/arun-totad"
     },
     {
       name: "Mail",
       src: "/mail.png",
-      url: "mailto:rohanvenkatesha@gmail.com"
+      url: "mailto:aruntotad05@gmail.com"
     },
   ];
   

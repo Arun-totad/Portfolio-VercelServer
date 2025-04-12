@@ -44,7 +44,7 @@ const Navbar = () => {
       <a href='#about-me' className='h-auto w-auto flex flex-row items-center'>
       {/* Desktop Logo */}
       <Image
-        src="/NavLogo.png"
+        src="/NavLogo.jpg"
         alt="desktop logo"
         width={40}
         height={40}
@@ -55,13 +55,13 @@ const Navbar = () => {
       <Image
         src="/home.jpg"  // Update with the path to the mobile logo
         alt="mobile logo"
-        width={40}
-        height={40}
+        width={50}
+        height={50}
         className="cursor-pointer hover:scale-110 transition-transform duration-300 sm:hidden max-w-[40px] max-h-[40px] rounded-full"
       />
 
       <span className='font-bold ml-[10px] hidden md:block cursor-pointer bg-gradient-right-light'>
-        Rohan Venkatesha
+        Arun Totad
       </span>
     </a>
 
