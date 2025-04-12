@@ -44,7 +44,7 @@ const Navbar = () => {
       <a href='#about-me' className='h-auto w-auto flex flex-row items-center'>
       {/* Desktop Logo */}
       <Image
-        src="/NavLogo.jpg"
+        src="/Tie.jpg"
         alt="desktop logo"
         width={40}
         height={40}
